@@ -1,0 +1,119 @@
+strong{
+    font-weight: bolder;
+}
+.a-text-italic{
+    font-style: italic!important;
+}
+.dcr-106f06m{
+    margin-bottom: 0.75rem;
+    word-break: break-word;
+    font-family: Georgia,serif;
+    font-size: 1.0625rem;
+    line-height: 1.4;
+    font-weight: 400;
+    font-style: normal;
+    --source-text-decoration-thickness: 2px;
+    color: var(--textblock-text);
+}
+.dcr-106f06m [data-dcr-style="bullet"] {
+    display: inline-block;
+    content: '';
+    border-radius: 50%;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: #866D50;
+}
+.dcr-nyoej5{
+    font-family: Georgia,serif;
+    font-size: 1.5rem;
+    line-height: 1.15;
+    font-weight: 500;
+    font-style: normal;
+    --source-text-decoration-thickness: 3px;
+}
+element.style{
+    fill: var(--pullquote-icon);
+}
+.dcr-scql1j{
+    height: 0.7em;
+    width: auto;
+    vertical-align: baseline;
+    margin-right: 4px;
+}
+
+.dcr-zzndwp{
+    display: inline;
+    font-style: italic;
+}
+blockquote, q{
+    quotes: none;
+}
+
+button {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    border: 3px solid #000;
+    outline: none;
+    background: #000;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 
+        0 0 5px #0ef,
+        inset 0 0 10px #0ef,
+        0 0 20px #0ef,
+        inset 0 0 40px #0ef,
+        inset 0 0 40px #0ef,
+        0 0 80px #0ef,
+        0 0 160px #0ef;
+    transition: .3s;    
+}
+button:hover {
+    box-shadow: 
+        0 0 5px #f0f,
+        inset 0 0 10px #f0f,
+        0 0 20px #f0f,
+        inset 0 0 40px #f0f,
+        inset 0 0 40px #f0f,
+        0 0 80px #f0f,
+        0 0 160px #f0f;
+}
+button::before {
+    content: 'Download';
+    position: absolute;
+    text-shadow: 
+        0 0 20px #0ef,
+        0 0 20px #0ef,
+        0 0 20px #0ef,
+        0 0 20px #0ef,
+        0 0 20px #0ef;
+     transition: transform .3s;    
+
+}
+button:hover::before {
+    transform: translateY(50px);
+    opacity: 0;
+}
+button::after {
+    content: 'Meteor!';
+    position: absolute;
+    text-shadow: 
+        0 0 20px #f0f,
+        0 0 20px #f0f,
+        0 0 20px #f0f,
+        0 0 20px #f0f,
+        0 0 20px #f0f;
+    transform: translateY(-50px); 
+    opacity: 0;
+    transition: transform .3s;   
+
+}
+button:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+}
